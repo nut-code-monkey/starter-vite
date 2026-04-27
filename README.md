@@ -10,11 +10,6 @@ A starter template for building web applications with [ElementaryUI](https://git
 
 Click **Use this template** on GitHub or check the [docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) about using templates.
 
-You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project.
-```sh
-npx degit elementary-swift/starter-vite my-swift-web-app
-```
-
 <p align="center">
   <img src="https://elementary-swift.github.io/assets/vite-starter-split-screen.gif" alt="Elementary Demo Split Screen">
 </p>
@@ -25,9 +20,18 @@ npx degit elementary-swift/starter-vite my-swift-web-app
 
 ## Getting Started
 
+You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project:
+```sh
+npx degit nut-code-monkey/starter-vite my-swift-web-app
+```
+or simply clone it:
+```sh
+git clone https://github.com/nut-code-monkey/starter-vite.git my-swift-web-app
+```
+
 - Open project folder with VS Code
 - Press F1 and type "Dev Containers: Reopen in Container
-- Wait until container will build itself (first it can take a time)
+- Wait until the container builds (it may take some time at first).
 
 All tools and dependencies will be installed inside [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) (swift 6.3.1, Swift WebAssembly SDK, Node.js, wasm-opt, npm)
 
