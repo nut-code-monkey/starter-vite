@@ -25,11 +25,11 @@ npx degit elementary-swift/starter-vite my-swift-web-app
 
 ## Getting Started
 
-- Open folder project folder with VS Code
+- Open project folder with VS Code
 - Press F1 and type "Dev Containers: Reopen in Container
 - Wait until container will build itself (first it can take a time)
 
-All tools and dependencies will be installed inside [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) (swift 6.3.1, Swift WebAwwembly SDK, Node.js, wasm-opt, npm)
+All tools and dependencies will be installed inside [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) (swift 6.3.1, Swift WebAssembly SDK, Node.js, wasm-opt, npm)
 
 ## Develop
 
