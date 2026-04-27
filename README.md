@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Minimal Vite Starter for ElementaryUI
+# Minimal Vite Starter for ElementaryUI in Dev Container
 
 A starter template for building web applications with [ElementaryUI](https://github.com/elementary-swift/elementary-ui) powered by [Vite](https://vite.dev/).
 
@@ -13,7 +13,6 @@ Click **Use this template** on GitHub or check the [docs](https://docs.github.co
 You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project.
 ```sh
 npx degit elementary-swift/starter-vite my-swift-web-app
-cd my-swift-web-app
 ```
 
 <p align="center">
@@ -22,29 +21,20 @@ cd my-swift-web-app
 
 ## Prerequisites
 
-- Swift 6.2+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
-- Node.js 22+ ([nodejs.org](https://nodejs.org/en/download))
-- wasm-opt (optional, [homebrew](https://formulae.brew.sh/formula/binaryen) or [manual](https://github.com/WebAssembly/binaryen/releases))
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) or [OrbStack](https://orbstack.dev) (much faster for MacOS) and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for [VS Code](https://code.visualstudio.com).
 
 ## Getting Started
 
-```sh
-# Verify Swift toolchain
-swift --version
-# look for a compiler tag like this: (swift-6.2.3-RELEASE)
+- Open folder project folder with VS Code
+- Press F1 and type "Dev Containers: Reopen in Container
+- Wait until container will build itself (first it can take a time)
 
-# Verify Swift SDK for WebAssembly
-swift sdk list
-# should contain matching entries, eg: swift-6.2.3-RELEASE_wasm and swift-6.2.3-RELEASE_wasm-embedded
-
-# Install dependencies
-npm install
-```
+All tools and dependencies will be installed inside [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) (swift 6.3.1, Swift WebAwwembly SDK, Node.js, wasm-opt, npm)
 
 ## Develop
 
+From VS Code terminal start development server with hot reload:
 ```sh
-# Start development server with hot reload
 npm run dev
 ```
 
@@ -52,11 +42,13 @@ Runs an initial debug build of the WebAssembly app in the browser. Swift files a
 
 ## Deploying
 
+Build in release and bundle for deployment:
 ```sh
-# Build in release and bundle for deployment
 npm run build
+```
 
-# Preview the built web app locally
+Preview the built web app locally:
+```sh
 npm run preview
 ```
 
