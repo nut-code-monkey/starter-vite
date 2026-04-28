@@ -15,4 +15,4 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
 # WASM sdk install
 RUN swift sdk install https://download.swift.org/swift-6.3.1-release/wasm-sdk/swift-6.3.1-RELEASE/swift-6.3.1-RELEASE_wasm.artifactbundle.tar.gz --checksum bd47baa20771f366d8beed7970afaa30742b2210097afd15f85427226d8f4cf2
 
-WORKDIR /workspace
+WORKDIR /workspaces
