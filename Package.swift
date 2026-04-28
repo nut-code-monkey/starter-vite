@@ -5,7 +5,7 @@ let package = Package(
   name: "elementary-web-app",
   platforms: [.macOS(.v26)],
   dependencies: [
-    .package(url: "https://github.com/elementary-swift/elementary-ui.git", from: "0.1.3")
+    .package(url: "https://github.com/elementary-swift/elementary-ui.git", from: "0.2.2")
   ],
   targets: [
     .executableTarget(
@@ -14,7 +14,7 @@ let package = Package(
         .product(name: "ElementaryUI", package: "elementary-ui")
       ],
       swiftSettings: [
-        .swiftLanguageMode(.v5)
+        .swiftLanguageMode(.v6)
       ],
     )
   ]
