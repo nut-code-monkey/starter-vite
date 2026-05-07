@@ -18,12 +18,12 @@ Click **Use this template** on GitHub or check the [docs](https://docs.github.co
 
 You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project.
 ```sh
-npx degit elementary-swift/starter-vite my-swift-web-app
+npx degit nut-code-monkey/starter-vite my-swift-web-app
 cd my-swift-web-app
 ```
 or simply clone it:
 ```sh
-git clone https://github.com/elementary-swift/starter-vite.git my-swift-web-app
+git clone https://github.com/nut-code-monkey/starter-vite.git my-swift-web-app
 ```
 
 ## You can 2 options to work with this project:
