@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Minimal Vite Starter for ElementaryUI in Dev Container
+# Minimal Vite Starter for ElementaryUI
 
 A starter template for building web applications with [ElementaryUI](https://github.com/elementary-swift/elementary-ui) powered by [Vite](https://vite.dev/).
 
@@ -14,31 +14,53 @@ Click **Use this template** on GitHub or check the [docs](https://docs.github.co
   <img src="https://elementary-swift.github.io/assets/vite-starter-split-screen.gif" alt="Elementary Demo Split Screen">
 </p>
 
-## Prerequisites
-
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) or [OrbStack](https://orbstack.dev) (much faster for MacOS) and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for [VS Code](https://code.visualstudio.com).
-
 ## Getting Started
 
-You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project:
+You can use [degit](https://github.com/Rich-Harris/degit) to scaffold a local project.
 ```sh
-npx degit nut-code-monkey/starter-vite my-swift-web-app
+npx degit elementary-swift/starter-vite my-swift-web-app
+cd my-swift-web-app
 ```
 or simply clone it:
 ```sh
-git clone https://github.com/nut-code-monkey/starter-vite.git my-swift-web-app
+git clone https://github.com/elementary-swift/starter-vite.git my-swift-web-app
 ```
 
+## You can 2 options to work with this project:
+
+### *Native Install* - all tools must be installed on your computer:
+#### Prerequisites:
+- Swift 6.3+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
+- Node.js 22+ ([nodejs.org](https://nodejs.org/en/download))
+- wasm-opt (optional, [homebrew](https://formulae.brew.sh/formula/binaryen) or [manual](https://github.com/WebAssembly/binaryen/releases))
+```sh
+# Install dependencies
+npm install
+```
+
+### *Dev Containers* - all dependencies will be installed in isolated container:
+#### Prerequisites:
+- [Docker](https://www.docker.com)
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for [VS Code](https://code.visualstudio.com).
 - Open project folder with VS Code
 - Press F1 and type "Dev Containers: Reopen in Container
 - Wait until the container builds (it may take some time at first).
 
-All tools and dependencies will be installed inside [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) (swift 6.3.1, Swift WebAssembly SDK, Node.js, wasm-opt, npm)
+## Check installed tools:
+```sh
+# Verify Swift toolchain
+swift --version
+# look for a compiler tag like this: (swift-6.3.1-RELEASE)
+
+# Verify Swift SDK for WebAssembly
+swift sdk list
+# should contain matching entries, eg: swift-6.3.1-RELEASE_wasm and swift-6.3.1-RELEASE_wasm-embedded
+```
 
 ## Develop
 
-From VS Code terminal start development server with hot reload:
 ```sh
+# Start development server with hot reload
 npm run dev
 ```
 
@@ -46,13 +68,11 @@ Runs an initial debug build of the WebAssembly app in the browser. Swift files a
 
 ## Deploying
 
-Build in release and bundle for deployment:
 ```sh
+# Build in release and bundle for deployment
 npm run build
-```
 
-Preview the built web app locally:
-```sh
+# Preview the built web app locally
 npm run preview
 ```
 

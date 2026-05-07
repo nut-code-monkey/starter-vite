@@ -14,7 +14,7 @@ let package = Package(
         .product(name: "ElementaryUI", package: "elementary-ui")
       ],
       swiftSettings: [
-        .swiftLanguageMode(.v6)
+        .swiftLanguageMode(.v5)
       ],
     )
   ]
