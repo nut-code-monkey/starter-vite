@@ -26,27 +26,29 @@ or simply clone it:
 git clone https://github.com/elementary-swift/starter-vite.git my-swift-web-app
 ```
 
-## You can 2 options to work with this project:
+## Development Environment
 
-### *Native Install* - all tools must be installed on your computer:
-#### Prerequisites:
+### Option 1: Native Install
+
+**Prerequisites:**
 - Swift 6.3+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
 - Node.js 22+ ([nodejs.org](https://nodejs.org/en/download))
 - wasm-opt (optional, [homebrew](https://formulae.brew.sh/formula/binaryen) or [manual](https://github.com/WebAssembly/binaryen/releases))
+
 ```sh
-# Install dependencies
 npm install
 ```
 
-### *Dev Containers* - all dependencies will be installed in isolated container:
-#### Prerequisites:
-- [Docker](https://www.docker.com)
-- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for [VS Code](https://code.visualstudio.com).
-- Open project folder with VS Code
-- Press F1 and type "Dev Containers: Reopen in Container
-- Wait until the container builds (it may take some time at first).
+### Option 2: Dev Containers
 
-## Check installed tools:
+**Prerequisites:**
+- [Docker](https://www.docker.com)
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for VS Code or any compatible editor
+
+Open the project folder in your editor and run the "Dev Containers: Reopen in Container" command. The initial build may take several minutes.
+
+## Verify Installation
+
 ```sh
 # Verify Swift toolchain
 swift --version
